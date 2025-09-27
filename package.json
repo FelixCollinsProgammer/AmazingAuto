@@ -1,0 +1,25 @@
+{
+  "name": "amazing-automata",
+  "version": "1.0.0",
+  "description": "Universal CI/CD Pipeline Generator",
+  "main": "amazing_automata.py",
+  "scripts": {
+    "start": "python3 amazing_automata.py",
+    "analyze": "python3 amazing_automata.py analyze",
+    "generate": "python3 amazing_automata.py generate",
+    "help": "python3 amazing_automata.py help"
+  },
+  "keywords": [
+    "ci-cd",
+    "pipeline",
+    "automation",
+    "devops",
+    "build",
+    "deploy"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT",
+  "engines": {
+    "python": ">=3.9.0"
+  }
+}
