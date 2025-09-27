@@ -838,10 +838,11 @@ class AmazingAutomata:
             project_info = self.analyze_project(project_path)
             pipeline = self.generate_pipeline(project_path, project_info)
             
+            import datetime
             result = {
                 'project_info': project_info,
                 'pipeline': pipeline,
-                'timestamp': str(pd.Timestamp.now()),
+                'timestamp': str(datetime.datetime.now()),
                 'success': True
             }
             
@@ -851,9 +852,10 @@ class AmazingAutomata:
         except Exception as error:
             print(f"\n💥 Процесс завершен с ошибкой: {error}")
             
+            import datetime
             return {
                 'error': str(error),
-                'timestamp': str(pd.Timestamp.now()),
+                'timestamp': str(datetime.datetime.now()),
                 'success': False
             }
     
@@ -951,5 +953,4 @@ def main():
 
 
 if __name__ == '__main__':
-    import pandas as pd
     main()
